@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="logstyle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Litt Logg</title>
+    <link rel="icon" type="image/x-icon" href="imjpcic.dll_14_125_1024.ico">
+</head>
+<body>
+    <header>
+      
+      <h0 style="float: left; padding-left: 2%; font-size: 22px; font-weight: bolder;">
+      <input type="text" id="url" value="Search URLs" style="position: absolute; right: 30px; top: 26px">
+      <img src="WLQXHbd2.png" width="48px" style="padding-right: 3%; position: relative; right: 1px; top: 10px ">
+      Litt Git</h0>
+        </header>
+      <nav id="nav">
+        <ul>
+          <li><a href="">Øverst</a> </li>
+          <li><a href="">Nederst</a></li>
+          <li><a href="index.html">Tilbake til Hjemmeside</a> </li>
+        </ul>
+      </nav>
+      <nav id="navd">
+        <ul>
+          <li id="navli"><a id="ah" onclick="hide()" >Dag 1</a> </li>
+          <li id="navli"><a id="ah" onclick="hideb()">Dag 2</a></li>
+          <li id="navli"><a id="ah" onclick="hidec()">Dag 3</a> </li>
+          <li id="navli"><a id="ah" onclick="hided()">Dag 4</a> </li>
+        </ul>
+      </nav>
+      <main>
+        <article>
+          <h2>Logg</h2>
+          <p id="beg">Klikk på en av dagene for å begynne å se ukentlig logg.</p>
+          <p id="anker1" hidden>Dag 1: I dag har jeg begynt litt med designet på hjemmesiden, men har ikke begynt med andresiden. Jeg har også laget et ikon, eller mer spesifikt, funnet et og forandret på det.
+          <img src="WLQXHbd2.png" style=" width: 8%; position: absolute; top: 24%; right: 85%;"></p>
+          <p id="anker2" style="position: absolute; top: 40%" hidden>Dag 2: Det jeg har gjort i dag er å fikse headeren. Headeren virker litt stor og bakgrunnen på den vil ikke funke slik den skal. Heldigvis så har jeg klart å skalere den. Jeg har enda ikke gjort en commit i git på lenge. Jeg skal også prøve på å få til en sidemeny på logg.html hvor man kan følge med på de forskjellige dagene i loggen. Jeg får se om jeg orker å få det til fordi det kan hende at jeg må bruke javascript.</p>
+          <p id="anker3" style="position: absolute; top: 60%" hidden class="myetekst">
+            Dag 3: Jeg har gjort noen vesentlige forandringer med logg.html og jeg droppet sidemenyen fordi det ville bli for komplisert. Jeg har også jobbet litt med nettsidene hjemme og en tabell er blitt lagt til. Prosjektet har også blitt commitet.
+             <a href="Netts.png">
+              <img src="Netts.png" width="23%" style="position: absolute; top: -100%; right: 10%;">
+            </a> 
+            <a href="comm.png">
+            <img src="comm.png" width="23%" style="position: absolute; top: -100%; right: 36%;">
+            </a>
+          </p>
+          <p id="anker4" hidden>Dag4:</p>
+      </main>
+
+<script>
+  function hide(){
+    document.getElementById("beg").hidden = true;
+    if (document.getElementById("anker1").hidden == true)
+    document.getElementById("anker1").hidden = false;
+  else document.getElementById("anker1").hidden = true
+  }
+</script>
+
+<script>
+
+  function hideb(){
+    document.getElementById("beg").hidden = true;
+    if (document.getElementById("anker2").hidden == true)
+    document.getElementById("anker2").hidden = false;
+  else document.getElementById("anker2").hidden = true
+  }
+</script>
+<script>
+
+  function hidec(){
+    document.getElementById("beg").hidden = true;
+    if (document.getElementById("anker3").hidden == true)
+    document.getElementById("anker3").hidden = false;
+  else document.getElementById("anker3").hidden = true
+  }
+</script>
+<script>
+
+  function hided(){
+    document.getElementById("beg").hidden = true;
+    if (document.getElementById("anker4").hidden == true)
+    document.getElementById("anker4").hidden = false;
+  else document.getElementById("anker4").hidden = true
+  }
+</script>
+
+      <footer><a target="blank"></footer>
+</body>
+</html>
