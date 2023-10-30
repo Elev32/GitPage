@@ -88,7 +88,18 @@
     height: 32px;
     background-image: url(tur2.png);
   }
+  td {
+    border: 1px solid rgb(82, 82, 82);
+    font-size: 12px;
+    padding: 1%;
+  }
 
   #ta {
     border: 1px solid lightslategray
+  }
+  footer {
+    text-align: center;
+    padding: 3px;
+    background-color: rgb(155, 155, 155);
+    color: white;
   }
