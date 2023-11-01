@@ -7,6 +7,8 @@ body {
   background-color: #ffffff;
   color: rgb(46, 46, 46);
   margin: 0;
+  overflow: scroll;
+  overflow-y: scroll;
 }
 
 header{
@@ -31,7 +33,7 @@ nav{
   float: center; /*Gjør at child-elementer som flyter (float), holder seg inne i boksen */
   width: 100%;
   height: 25px;
-  background-image: url(tur2.png);
+  background-image: url(tur23.png);
   position:static; /*Gjør at menylinja fester seg til et fast punkt i vinduet når man skroller. Hvor den fester seg, angir man med top, left, right og/eller bottom, som på neste linje.*/
 
 }
@@ -91,7 +93,7 @@ nav a:hover{
   height:  24px;
 }
 
-main, footer{
+main{
   clear:left;
   width: 90%;
   padding: 1em;
@@ -101,6 +103,14 @@ main, footer{
 code{
   font-size: 1.3em;
 }
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: rgb(155, 155, 155);
+  color: white;
+}
+
 .myetekst {
   padding-right: 58%;
 }

@@ -18,7 +18,7 @@
       <nav id="nav">
         <ul>
           <li><a href="">Øverst</a> </li>
-          <li><a href="">Nederst</a></li>
+          <li><a href="anker5">Nederst</a></li>
           <li><a href="index.html">Tilbake til Hjemmeside</a> </li>
         </ul>
       </nav>
@@ -28,6 +28,7 @@
           <li id="navli"><a id="ah" onclick="hideb()">Dag 2</a></li>
           <li id="navli"><a id="ah" onclick="hidec()">Dag 3</a> </li>
           <li id="navli"><a id="ah" onclick="hided()">Dag 4</a> </li>
+          <li id="navli"><a id="ah" onclick="hidee()">Dag 5 & 6</a> </li>
         </ul>
       </nav>
       <main>
@@ -47,6 +48,8 @@
             </a>
           </p>
           <p id="anker4" style="position: absolute; top: 91%; " hidden>Dag 4: I dag har jeg prøvd å laste opp proskjektet på Github, men det ble en feil med branch-navnene så jeg måtte slette master-branchen på github og endret navnet på main til master. Da ble git veldig forvirret og sluttet å virke skikkelig. Ingen har klart å hjelpe meg med problemet.</p>
+          
+          <p id="anker5" style="position: absolute; top: 100%;" hidden>Dag 5 og 6: Nå fant jeg ut problemet med github. Jeg måtte skrive push --force origin master for å erstatte alt tomrommet i repositumet.</p>
       </main>
 
 <script>
@@ -85,7 +88,18 @@
   else document.getElementById("anker4").hidden = true
   }
 </script>
+<script>
 
-      <footer><a target="blank"></footer>
+  function hidee(){
+    document.getElementById("beg").hidden = true;
+    if (document.getElementById("anker5").hidden == true)
+    document.getElementById("anker5").hidden = false;
+  else document.getElementById("anker5").hidden = true
+  }
+</script>
+
+<footer style="position: absolute; bottom: -100px; float: center; width: 100%; height: 40px; padding: 10px">
+  Nettsiden er lisensert av Eirik ©. Git og skaperne av Git har ingen rettigheter forbeholdt.
+</footer>
 </body>
 </html>
