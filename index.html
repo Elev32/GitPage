@@ -8,7 +8,7 @@
     <link rel="icon" type="image/x-icon" href="Untitled.png">
 </head>
 <body>
-    <header>
+    <header id="anker1">
       <h0 style="float: left; padding-left: 2%; font-size: 22px; font-weight: bolder;">
       <input type="text" id="url" value="Search URLs" style="position: absolute; right: 30px; top: 26px">
       <img src="WLQXHbd2.png" width="48px" style="padding-right: 3%; position: relative; right: 1px; top: 10px ">
@@ -16,7 +16,6 @@
         </header>
       <nav>
         <ul>
-          <li><a href="#anker1">Øverst</a> </li>
           <li><a href="#anker2">Nederst</a></li>
           <li><a href="logg.html">Loggen min!</a> </li>
         </ul>
@@ -24,22 +23,35 @@
       <main>
         <article>
           <h2>Hva er Git?</h2>
-          <p id="anker1">Git er et veldig nyttig verktøy og hjelpemiddel for koding som kan offentliggjøre prosjekter og gjennfinne feil mye enklere. det git gjør er å skape et oppbevaringsted i prosjektet ditt for å senere lagre andre versjoner av prosjektet, og slik kan du gå tilbake hvis du har ødelagt prosjektet. Man kan si at git er en slags logg og historikk. </p>
+          <p>Git er et veldig nyttig verktøy og hjelpemiddel for koding som kan offentliggjøre prosjekter og gjennfinne feil mye enklere. det Git gjør er å skape et oppbevaringsted i prosjektet ditt for å senere lagre andre versjoner av prosjektet, og slik kan du gå tilbake hvis du har ødelagt prosjektet. Man kan si at Git er en slags logg og historikk. </p>
           <h3>Hvororfor bør man bruke Git?</h3>
-          <p id="anker2" >Man bør bruke git i sine prosjekt fordi man kan lett gjenvinne og lagre prosjekter. Man kan også enklere samarbeide med andre utviklere ved å dele og kombinere endringer i koden. Git gir også muligheten til å holde oversikt over forskjellige versjoner av prosjektet, slik at man kan gå tilbake til tidligere versjoner hvis noe går galt. Dette er spesielt nyttig når man jobber med større prosjekter eller i team, der flere personer kan jobbe på samme kodebase samtidig. </p>
-          <p style="padding-bottom: 3%;">En annen fordel med Git er at det fungerer godt med forskjellige plattformer og verktøy. Det er uavhengig av operativsystemet og kan integreres med ulike utviklingsmiljøer og skybaserte tjenester. Dette gjør det enkelt å jobbe med Git uansett hvilke verktøy man foretrekker å bruke.</p>
-          <table style="width: 59%;">
+          <p>Man bør bruke git i sine prosjekt fordi man kan lett gjenvinne og lagre prosjekter. Man kan også enklere samarbeide med andre utviklere ved å dele og kombinere endringer i koden. Git gir også muligheten til å holde oversikt over forskjellige versjoner av prosjektet, slik at man kan, som sagt, gå tilbake til tidligere versjoner hvis noe går galt. Dette er spesielt nyttig når man jobber med større prosjekter eller i team, der flere personer kan jobbe på samme kodebase samtidig. </p>
+          <p>En annen fordel med Git er at det fungerer godt med forskjellige plattformer og verktøy. Det er uavhengig av operativsystemet og kan integreres med ulike utviklingsmiljøer og skybaserte tjenester. Dette gjør det enkelt å jobbe med Git uansett hvilke verktøy man foretrekker å bruke. Det er virkelig ikke så Nøye om du bruker Linux, Windows eller noe annet!</p>
+          <p style="padding-bottom: 3%;">Før man Bruker Git bør man helst lære seg de forskjellige kommandoene og hvordan man bruker det, Så derfor har jeg laget en god oversikt over noen kommandoer som vil være nyttige om du bruker Git: </p>
+          <table style="width: 1100px;">
               <th id="ta">Nyttige git-kommandoer:</th>
             <tr>
               <td>git init: Initialiserer et nytt Git-repositorium i den gjeldende mappen. Dette oppretter en tom Git-database som lar deg spore endringer i filene dine.
                 <div>git add (filnavn): Legger til en fil i Git-indeksen for å bli fulgt og inkludert i neste commit. Du kan også bruke `git add .` for å legge til alle endrede filer.</div>
                 <div>git status: Viser statusen til arbeidsområdet ditt, inkludert endrede, lagt til eller slettet filer. Dette hjelper deg med å se hva som er klart for commit.</div>
                 <div>git rm (filnavn/mappenavn): fjerner en bestemt mappe eller fil permament.</div>
+                <div>git fetch: Henter ned endringer fra et eksternt Git-repositorium (som Github) til den lokale kopien uten å fusjonere dem på den nåværende grenen.</div>
+                <div>git pull: Henter endringer fra et eksternt repositum (GitHub) og integrerer dem lokalt.</div>
+                <div>git commit -m "(melding)": legger til endringer i en midlertidlig lagringsplass og meldingen kan kommentere hvilke endringer som er gjort. </div>
+                <div>git push: legger til endringene som er gjort i en commit til et eksternt repositum</div>
+                <div style="padding-bottom: 1%;">git --force push: legger ikke bare til endringer til et eksternt repositum, men tvinger frem lokale commits til repositumet. --force tvinger gjennom en operasjon og kan overskrive arbeid, derfor bør man bruke den med forsiktighet</div>
+                <div>git clone (url): Kloner et eksisterende Git-repositorium fra en URL til lokal lagring.</div>
+                <div>git checkout (grennavn): Bytter til en annen eksisterende gren i repositumet. Dette lar deg jobbe på en annen gren enn den du er på.</div>
+                <div>git remote add (navn) (url): brukes til å legge til en ny fjernadresse (remote) til et Git-repositorium. En fjernadresse er en referanse til et eksternt repositorium.</div>
               </td>
             </table>
+            <h3 style="padding-top: 3%;">Er Git gratis?</h3>
+            <p style="padding-bottom: 1%;">Ja, Git er gratis og har åpen kildekode under GNU-lisensen. Git er også utviklet av skaperen av Linux, nemlig Linus Torvalds.</p>
+            <h4>Er Git det samme som Github?</h4>
+            <p>Nei, Github er et skylagringssted for repositum og prosjekter som kan lastes opp via Git.</p>
       </main>
-      <footer style="position: absolute; bottom: -100px; float: center; width: 100%; height: 40px; padding: 10px">
-        Nettsiden er lisensert av Eirik ©. Git og skaperne av Git har ingen rettigheter forbeholdt.
+      <footer id="anker2" style="position: absolute; bottom: -120%px; float: center; width: 100%; height: 40px; padding: 10px">
+        Nettsiden er "lisensert" av Eirik ©. Git og skaperne av Git har ingen rettigheter forbeholdt. <a id="averst" href="#anker1">Øverst?</a>
       </footer>
 </body>
 </html>

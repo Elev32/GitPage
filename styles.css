@@ -92,7 +92,7 @@
     border: 1px solid rgb(82, 82, 82);
     font-size: 12px;
     padding: 1%;
-    line-height: 160%;
+    line-height: 180%;
   }
 
   #ta {
@@ -103,4 +103,9 @@
     padding: 3px;
     background-color: rgb(155, 155, 155);
     color: white;
+  }
+
+  #averst{
+    text-decoration-line: none;
+    color: azure;
   }

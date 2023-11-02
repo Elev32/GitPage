@@ -114,3 +114,8 @@ footer {
 .myetekst {
   padding-right: 58%;
 }
+
+#averst{
+  text-decoration-line: none;
+  color: azure;
+}

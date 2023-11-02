@@ -8,7 +8,7 @@
     <link rel="icon" type="image/x-icon" href="imjpcic.dll_14_125_1024.ico">
 </head>
 <body>
-    <header>
+    <header id="overst">
       
       <h0 style="float: left; padding-left: 2%; font-size: 22px; font-weight: bolder;">
       <input type="text" id="url" value="Search URLs" style="position: absolute; right: 30px; top: 26px">
@@ -17,8 +17,7 @@
         </header>
       <nav id="nav">
         <ul>
-          <li><a href="">Øverst</a> </li>
-          <li><a href="anker5">Nederst</a></li>
+          <li><a href="#foot">Nederst</a></li>
           <li><a href="index.html">Tilbake til Hjemmeside</a> </li>
         </ul>
       </nav>
@@ -49,7 +48,7 @@
           </p>
           <p id="anker4" style="position: absolute; top: 91%; " hidden>Dag 4: I dag har jeg prøvd å laste opp proskjektet på Github, men det ble en feil med branch-navnene så jeg måtte slette master-branchen på github og endret navnet på main til master. Da ble git veldig forvirret og sluttet å virke skikkelig. Ingen har klart å hjelpe meg med problemet.</p>
           
-          <p id="anker5" style="position: absolute; top: 100%;" hidden>Dag 5 og 6: Nå fant jeg ut problemet med github. Jeg måtte skrive push --force origin master for å erstatte alt tomrommet i repositumet.</p>
+          <p id="anker5" style="position: absolute; top: 100%;" hidden>Dag 5 og 6: Nå fant jeg ut problemet med github. Jeg måtte skrive push --force origin master for å erstatte alt tomrommet i repositumet. Jeg har også skrevet mye mer om Git på hjemmesiden og siden har jeg også lagt til et nytt commit på github.</p>
       </main>
 
 <script>
@@ -98,8 +97,8 @@
   }
 </script>
 
-<footer style="position: absolute; bottom: -100px; float: center; width: 100%; height: 40px; padding: 10px">
-  Nettsiden er lisensert av Eirik ©. Git og skaperne av Git har ingen rettigheter forbeholdt.
+<footer id="foot" style="position: absolute; bottom: -100%; float: center; width: 100%; height: 40px; padding: 10px">
+  Nettsiden er "lisensert" av Eirik ©. Git og skaperne av Git har ingen rettigheter forbeholdt. <a id="averst" href="#overst">Øverst?</a>
 </footer>
 </body>
 </html>
